@@ -61,8 +61,8 @@ crypto/debug.keystore:
 android-sdk/cmdline-tools/bin/sdkmanager:
 	wget -O sdk.zip "$(SDK_URL)"
 	unzip -d android-sdk sdk.zip
-	touch $@
-
+	rm sdk.zip
+	
 android-sdk/platform-tools/%: android-sdk/cmdline-tools/bin/sdkmanager
 	$< --sdk_root=android-sdk --install "platform-tools"
 
