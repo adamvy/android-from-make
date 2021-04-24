@@ -119,3 +119,9 @@ install: $(APP_NAME)-aligned-debugsigned.apk $(ADB)
 #	aarch64-linux-gnu-gcc -shared -o $@ native/foo.c
 #
 # and include lib/arm64-v8a/libfoo.so in the apk
+# but that's for another day
+
+## TODO: Actually process resoucres via something like
+# generated/R.java: <resource xml files>
+# 	$(AAPT2) ...
+
