@@ -1,3 +1,5 @@
 android-sdk/
 build/
 crypto/
+*.apk
+*.apk.idsig

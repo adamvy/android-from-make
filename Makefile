@@ -82,7 +82,8 @@ clean:
 	rm -rf build
 	rm -f $(APP_NAME).apk
 	rm -f $(APP_NAME)-aligned.apk
-	rm -f $(APP_NAME)-align-debugsigned.apk
+	rm -f $(APP_NAME)-alignec-debugsigned.apk
+	rm -f $(APP_NAME)-aligned-debugsigned.apk.idsig
 
 build/compile-timestamp: $(JAVA_SRCS)
 	mkdir -p build/classes
